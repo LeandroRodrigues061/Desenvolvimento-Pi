@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,800;1,400&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,800;1,400&family=Righteous&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+   
+  }    
+#pesquisa{
+    height: 20px;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    border: solid #d18801 2px;
+}
+#pesquisa:hover{
+    border-color: #ffde25;
+}
+.navbar{
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    border:  0px solid black ;
+    border-radius: 0px 0px 30px 30px;
+    align-items: center;
+    position: absolute;
+}
+.navbar a{
+    text-decoration: none ; 
+    color: white; 
+}
+.navbar a:hover{
+    color: rgb(233, 95, 3);
+    transition: 0.5s; 
+}
+.navbar svg{
+    padding-right: 50px;
+}
+.navbar img{
+    margin: 0px;
+    padding: 0px;
+    width: 50vh;
+}
+main{
+    z-index: -1;
+    position: relative;
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.confira{
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Righteous', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    background: linear-gradient(68.15deg, #ffde25, #d18801 85.61%);
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    border-radius: 0px 0px 30px 30px;
+    height: 60px;
+}
+.confira:hover{
+    color: rgb(233, 95, 3);
+    transition: 0.5s; 
+}
+.banner2{
+    display: flex;
+    justify-content: space-around;
+    padding: 12px;
+    height: 150px;
+    padding-top: 0px;
+    margin-top: -10px;
+}
+
+.imgs-names{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    margin-left: 6px;
+    margin-top: -30px;
+    width: 10px; 
+    
+}
+.imgs-names a{
+    text-decoration: none;
+    color: #000;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-right: 88px;
+    margin-left: 84px;
+    margin-right: -3px;
+    justify-content: space-between;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Righteous', sans-serif;
+}
+.imgs-names a:hover{
+    color: rgb(233, 95, 3);
+    transition: 0.5s; 
+    font-size: 20px;
+    padding-right: 70px;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+.main-slider{
+    margin-top: 20px;
+    background-image: url(../img/fundo-ende.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slider{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+}
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;;
+}
+.slide img{
+    width: 500px;
+}
+.manual-navigation{
+    position: absolute;
+
+    width: 800px;
+    margin-top: -60px;
+    margin-left: 273px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: #fff;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+.navigation-auto div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navigation-auto{
+    position: absolute;
+    margin-left: -150px;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+.carrossel{
+    background-image: url(../img/fundo-ende.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.maps{
+    padding-bottom: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-image: url(../img/fundo-ende.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.local{
+    padding: 50px;
+    font-family: 'Barlow', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+#localiz{
+    font-size: 40px;
+    color: #FFCC00;
+}
+#localiz-ende{
+    font-size: 27px;
+    color: #ff9100;
+}
+#localiz-desc{
+    color: white;
+    font-size: 20px;
+}
+#faca-pedido{
+    text-align: center;
+    align-items: center;
+}
+#submit{
+    background: linear-gradient(68.15deg, #ffde25, #d18801 85.61%);
+    width: 500px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Righteous', sans-serif;
+    color: #fff;
+    font-size: 20px;
+}
+#submit:hover{
+    cursor: pointer;
+}
+.conteudo-footer{
+    height: 400px;
+}
+.conteudo-footer a{
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Righteous', sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+.conteudo-footer a:hover{
+    color: rgb(233, 95, 3);
+    transition: 0.5s; 
+}
+footer .conteudo-footer .logo-sobre img{
+    margin-left: 25px;
+    padding: 0px;
+    width: 50vh;
+
+}
+footer{
+    font-size: 20px;
+    padding: 10px;
+    padding-right: 0px;
+    margin-top: 25px;
+    background-image: url(../img/fundo-ende.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    display: flex;
+}
+#cardap-footer{
+    margin-left: 25px;
+    padding-left: 25px;
+    color: #ffff;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Righteous', sans-serif;
+}
+.hr-horizont{
+    border: solid #FFCC00 2.8px;
+    border-radius: 50px;
+    width: 90%;
+}
+#contato{
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Righteous', sans-serif;
+}
+#desc-sobre{
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Righteous', sans-serif;
+    color: #ffff;
+}
+.sobre{
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+#vertical-line{
+    border: solid #FFCC00 2px;
+    border-radius: 50px;
+    width: 1px;
+    height: 540px;
+    color: #d18801;
+}
+.follow{
+    background: linear-gradient(68.15deg, #ffde25, #d18801 85.61%);
+    font-family: 'Righteous', sans-serif;
+    border: #d18801 solid none;
+    border-radius: 50px 00px 0px 50px;
+    justify-content: right;
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+}
+.follow a{
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Righteous', sans-serif;
+    color: #fff;
+}
+.follow a:hover{
+    color: rgb(233, 95, 3);
+    transition: 0.5s; 
+}
+#follow{
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+.cadastro{
+    color: #fff;
+    text-align: center;
+}
+#email{
+    font-family: 'Righteous', sans-serif;
+    padding-left: 15px;
+    background-color: #fff;
+    border: none;
+    border-radius: 30px;
+    width: 80%;
+    height: 40px;
+}
+#button-cadastro::placeholder{
+    color: #ff9102;
+    font-size: 20px;
+}
+#button-cadastro{
+    position: relative;
+    top: -40px;
+    left: 170px;
+    font-family: 'Righteous', sans-serif;
+    font-size: 20px;
+    padding-left: 15px;
+    background-color: #fff;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    text-align: center;
+    width: 26%;
+    height: 40px;
+    background-color: #ff9100;
+}
+#button-cadastro:hover{
+    cursor: pointer;
+}
+b{
+    color: #d18801;
+}
+.icons-redes svg{
+    padding: 20px;
+}
+#copy{
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+}
