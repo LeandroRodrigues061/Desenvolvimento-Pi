@@ -92,8 +92,8 @@ main{
     color: #000;
     padding-top: 0px;
     padding-bottom: 10px;
-    padding-right: 88px;
-    margin-left: 84px;
+    padding-right: 135px;
+    margin-left: 130px;
     margin-right: -3px;
     justify-content: space-between;
     font-family: 'Barlow', sans-serif;
@@ -143,7 +143,7 @@ main{
 
     width: 800px;
     margin-top: -60px;
-    margin-left: 273px;
+    margin-left: 552px;
     display: flex;
     justify-content: center;
 }
@@ -275,7 +275,7 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 550px;
+    height: 600px;
     display: flex;
 }
 #cardap-footer{
@@ -308,7 +308,7 @@ footer{
     border: solid #FFCC00 2px;
     border-radius: 50px;
     width: 1px;
-    height: 540px;
+    height: 600px;
     color: #d18801;
 }
 .follow{
@@ -355,7 +355,7 @@ footer{
 #button-cadastro{
     position: relative;
     top: -40px;
-    left: 170px;
+    left: 325px;
     font-family: 'Righteous', sans-serif;
     font-size: 20px;
     padding-left: 15px;
