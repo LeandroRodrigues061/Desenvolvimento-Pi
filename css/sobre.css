@@ -140,7 +140,7 @@ section.conteudo02{
     align-items: center;
     text-align:left;
     font-size: 20px;
-    height: 60vh;
+    height: auto;
    
     background-size: cover;
     background: linear-gradient( rgba(0,0,0,.4),rgba(0,0,0,.4)), url(../img/bannerSobre.png);
@@ -148,7 +148,7 @@ section.conteudo02{
     background-position: center;
     display: flex;
     justify-content: space-between;
-    padding:0px 310px ;
+    padding:10px 310px;
 }
 
 .texto2 {
@@ -156,11 +156,12 @@ section.conteudo02{
 }
 
 .texto2 p{
-    padding: 10px 0 10px 100px;
+    padding: 0px 0 10px 100px;
+    height: auto;
 }
 
 .conteudo02 img{
-    padding: 0px 0 0 0;
+    padding: 0px;
     max-width:600px;
     width: 100%;
     max-height: 400px;

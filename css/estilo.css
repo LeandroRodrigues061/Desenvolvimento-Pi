@@ -20,39 +20,11 @@
     border-color: #ffde25;
 }
 body{
-    max-width: 100vw;
-    max-height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
 }
-/*.navbar{
-    font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: black;
-    margin: 0px;
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
-    width: 100%;
-    border:  0px solid black ;
-    border-radius: 0px 0px 30px 30px;
-    align-items: center;
-    position: absolute;
-}
-.navbar a{
-    text-decoration: none ; 
-    color: white; 
-}
-.navbar a:hover{
-    color: rgb(233, 95, 3);
-    transition: 0.5s; 
-}
-.navbar svg{
-    padding-right: 50px;
-}
-.navbar img{
-    margin: 0px;
-    padding: 0px;
-    width: 50vh;
-}*/
+
 :root{
     --laranja:#ff6600;
     --amarelo:#ffcc00;
@@ -61,7 +33,7 @@ body{
 }
 nav{
     
-    width: 95.8%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -78,7 +50,7 @@ nav{
 .logotipo{
     margin: 0%;
     padding: 0%;
-    width: 200px;
+    width: 15%; /* Ajuste conforme necessário */
    
 }
     
@@ -90,13 +62,11 @@ nav{
     padding: 20px 0;
 }
 
-
-
 .nav-menu ul{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    gap: 5.5rem;
+    gap: 2rem; /* Reduzi o espaçamento para evitar quebrar em telas menores */
     font-weight: 500px;
     
 }
@@ -116,7 +86,7 @@ nav a{
     justify-content: space-between;
     align-items: center;
     gap: 1.5rem;
-    font-size: 70px;
+    font-size: 2rem; /* Ajuste conforme necessário */
 }
 i{
     font-size: 30px;
@@ -125,6 +95,8 @@ i{
 main{
     z-index: -1;
     position: relative;
+    background-size: contain; /* Mantém a imagem dentro da tela */
+    background-position: top;
     background-image: url(../img/principal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -137,21 +109,7 @@ main img{
     padding-left: 5px;
     width: 50%;
 }
-#melhor{
-    color: white;
-    text-align: left;
-    font-size: 100px;
-    padding-left: 10%;
-    padding-top: 10%;
-    padding-bottom: 0%;
-}
-#coxi{
-    padding-left: 10%;
-    color: white;
-    text-align: left;
-    font-size: 150px;
-    font-family: w;
-}
+
 .confira{
     font-family: 'Barlow', sans-serif;
     font-family: 'Righteous', sans-serif;
@@ -174,25 +132,20 @@ main img{
     padding: 12px;
     height: 150px;
     padding-top: 0px;
+    padding-bottom: 10px;
+    padding-right: 10px; /* Ajuste conforme necessário */
     margin-top: -10px;
 }
 .imgs-names{
     display: flex;
-    flex-direction: row;
-    margin: 0px;
-    margin-left: 6px;
-    margin-top: -30px;
-    width: 10px; 
-    
 }
 .imgs-names a{
     text-decoration: none;
     color: #000;
     padding-top: 0px;
     padding-bottom: 10px;
-    padding-right: 135px;
-    margin-left: 130px;
-    margin-right: -3px;
+    padding-right: 5.5rem;
+    margin-left: 110px;
     justify-content: space-between;
     font-family: 'Barlow', sans-serif;
     font-family: 'Righteous', sans-serif;
@@ -200,10 +153,6 @@ main img{
 .imgs-names a:hover{
     color: rgb(233, 95, 3);
     transition: 0.5s; 
-    font-size: 20px;
-    padding-right: 70px;
-    font-weight: 900;
-    margin-bottom: 25px;
 }
 .main-slider{
     margin-top: 20px;
@@ -234,14 +183,13 @@ main img{
     transition: 2s;;
 }
 .slide img{
-    width: 500px;
+    width: 100%; /* Ocupa a largura total do elemento pai */
 }
 .manual-navigation{
     position: absolute;
-
-    width: 800px;
+    width: 100%;
     margin-top: -60px;
-    margin-left: 552px;
+    margin-left: 0; /* Ajuste conforme necessário */
     display: flex;
     justify-content: center;
 }
@@ -253,7 +201,7 @@ main img{
     transition: 1s;
 }
 .manual-btn:not(:last-child){
-    margin-right: 40px;
+    margin-right: 2.5rem; /* Ajuste conforme necessário */
 }
 .manual-btn:hover{
     background-color: #fff;
@@ -278,7 +226,7 @@ main img{
     position: absolute;
     margin-left: -150px;
     width: 800px;
-    margin-top: 360px;
+    margin-top: 22.5rem; /* Ajuste conforme necessário */
     display: flex;
     justify-content: center;
 }
@@ -327,14 +275,10 @@ main img{
     color: white;
     font-size: 20px;
 }
-#faca-pedido{
-    text-align: center;
-    align-items: center;
-}
 #submit{
     background: linear-gradient(68.15deg, #ffde25, #d18801 85.61%);
-    width: 500px;
-    height: 50px;
+    width: 25%;
+    height: 40px;
     border: none;
     border-radius: 50px;
     font-family: 'Barlow', sans-serif;
@@ -373,7 +317,7 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 600px;
+    height: auto;
     display: flex;
 }
 #cardap-footer{
@@ -400,7 +344,7 @@ footer{
 .sobre{
     display: flex;
     justify-content: space-between;
-    width: 700px;
+    width: 100vh;
 }
 #vertical-line{
     border: solid #FFCC00 2px;
@@ -438,36 +382,33 @@ footer{
     text-align: center;
 }
 #email{
+    margin: -5px;
     font-family: 'Righteous', sans-serif;
-    padding-left: 15px;
     background-color: #fff;
     border: none;
-    border-radius: 30px;
-    width: 80%;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+    width: 80vh;
     height: 40px;
+    padding-left: 10px;
 }
-#button-cadastro::placeholder{
-    color: #ff9102;
-    font-size: 20px;
+#email::placeholder{
+    padding-left: 10px;
 }
 #button-cadastro{
-    position: relative;
-    top: -40px;
-    left: 325px;
-    font-family: 'Righteous', sans-serif;
-    font-size: 20px;
-    padding-left: 15px;
-    background-color: #fff;
-    border: none;
-    border-radius: 30px;
-    color: #fff;
-    text-align: center;
-    width: 26%;
+    margin: 0px;
+    color: white;
+    width: 22vh;
     height: 40px;
+    border-radius: 0px 30px 30px 0;
+    cursor: pointer;
+    outline: none;
     background-color: #ff9100;
+    border: none;
 }
 #button-cadastro:hover{
     cursor: pointer;
+    background-color: #ff6600;
 }
 b{
     color: #d18801;
@@ -477,6 +418,99 @@ b{
 }
 #copy{
     color: #fff;
-    font-size: 10px;
+    font-size: 1rem; /* Ajuste conforme necessário */
     text-align: center;
+}
+.icons-redes svg {
+    padding: 1rem; /* Ajuste conforme necessário */
+}
+
+
+  /* css fale conosco */
+
+.conteudo{
+    background-image: url(../img/design-form.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top: 0.4px solid #FFF2E7;
+    margin-bottom: 30px;
+    padding: 1%;
+}
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+}
+.conteudo-principal-escrito-titulo{
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Righteous', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color:#ff9100;
+}
+.conteudo-principal-escrito-subtitulo{
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Righteous', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFF2E7;
+}
+.conteudo-principal-escrito-botao{
+  background: linear-gradient(68.15deg, #ffde25, #d18801 85.61%);
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0,0,0,0.25);
+    border-radius: 50px;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Righteous', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #f0e9ea;
+}
+.conteudo-principal-escrito-botao:hover{
+    background-color: rgba(247, 117, 10, 0.8);
+    color: rgb(15, 15, 15);
+    cursor: pointer;
+}
+.conteudo-contato{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFF2E7;
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inputs{
+    border-radius: 5px;
+    border: 20%;
+    border-color: #d18801;
+    text-align: justify;
+    
+
+
+}
+.agende{
+   
+        font-family: 'Barlow', sans-serif;
+        font-family: 'Righteous', sans-serif;
+        color: #fff;
+        font-size: 30px;
+        background: linear-gradient(68.15deg, #ffde25, #d18801 85.61%);
+        align-items: center;
+        text-align: center;
+        padding-top: 40px;
+
+        height: 60px;
+    
 }
