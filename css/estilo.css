@@ -144,9 +144,8 @@ main img{
     color: #000;
     padding-top: 0px;
     padding-bottom: 10px;
-    padding-right: 135px;
-    margin-left: 130px;
-    margin-right: -3px;
+    padding-right: 5.5rem;
+    margin-left: 110px;
     justify-content: space-between;
     font-family: 'Barlow', sans-serif;
     font-family: 'Righteous', sans-serif;
@@ -154,10 +153,6 @@ main img{
 .imgs-names a:hover{
     color: rgb(233, 95, 3);
     transition: 0.5s; 
-    font-size: 20px;
-    padding-right: 70px;
-    font-weight: 900;
-    margin-bottom: 25px;
 }
 .main-slider{
     margin-top: 20px;
